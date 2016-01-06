@@ -11,9 +11,10 @@ You should be able to start on to the next section,
 
 #### Mac
 
-OS X automatically installs toolchain, including Git, when you attempt to use it from the
-command line. Thus, to install developer tools, run the *Terminal* program
-(from `Applications/Utilities`) to get a command prompt. At the prompt, type
+OS X automatically installs its toolchain, including Git, when you
+attempt to use it from the command line for the first time. Thus, to
+install developer tools, run the *Terminal* program (from
+`Applications/Utilities`) to get a command prompt. At the prompt, type
 
 ```
     clang
@@ -70,7 +71,7 @@ Git is a source control tool that you’ll be learning more about later in this 
 In short, it keeps track of each version of your files, so that you can:
 
   - Go back to any previous version. This is useful because it means that mistakes
-    are easy to undo, and its safe to experiment.
+    are easy to undo, and it’s safe to experiment.
   
   - Have multiple versions (*branches*) simultaneously. You may use separate branches for
     different features you are developing or ideas you are trying, so that you can switch
