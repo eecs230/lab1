@@ -3,7 +3,7 @@
 ## Installation
 
 Before we can get started we need to install our development environment.
-You’ll need a C++ compiler, the CLion IDE, and Git for version control.
+You will need a C++ compiler, the CLion IDE, and Git for version control.
 You should be able to start on to the next section,
 [GitHub Setup](#github-setup), while files are downloading.
 
