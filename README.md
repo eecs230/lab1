@@ -8,23 +8,15 @@ Before we can get started we need to install our development environment. You’
 
 #### Mac
 
-OS X automatically installs its toolchain, including Git, when you
-attempt to use it from the command line for the first time. Thus, to
-install developer tools, run the *Terminal* program (from
-`Applications/Utilities`) to get a command prompt. At the prompt, type
+OS X automatically installs its toolchain, including Git, when you attempt to use it from the command line for the first time. Thus, to install developer tools, run the *Terminal* program (from `Applications/Utilities`) to get a command prompt. At the prompt, type
 
 ```
     clang
 ```
 
-and press return. If it prints `clang: error: no input files` then you
-have it installed already and don't need to do anything for this step. 
-Otherwise, a dialog box will pop up and offer
-to install the command-line developer tools for you. Say yes.
+and press return. If it prints `clang: error: no input files` then you have it installed already. Otherwise, a dialog box will pop up and offer to install the command-line developer tools for you. Say yes.
 
-(Alternatively, you can install the latest version of *Command Line Tools for OS X*
-manually [from Apple](https://developer.apple.com/downloads/), or install *XCode* from
-the App Store.)
+(Alternatively, you can install the latest version of *Command Line Tools for OS X* manually [from Apple](https://developer.apple.com/downloads/), or install *XCode* from the App Store.)
 
 #### Windows
 
