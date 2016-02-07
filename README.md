@@ -18,7 +18,8 @@ install developer tools, run the *Terminal* program (from
 ```
 
 and press return. If it prints `clang: error: no input files` then you
-have it installed already. Otherwise, a dialog box will pop up and offer
+have it installed already and don't need to do anything for this step. 
+Otherwise, a dialog box will pop up and offer
 to install the command-line developer tools for you. Say yes.
 
 (Alternatively, you can install the latest version of *Command Line Tools for OS X*
