@@ -24,7 +24,8 @@ On Windows, you need to install MinGW (the C++ compiler) and Git separately:
 
   - MinGW
 
-    1.  Download and run the installer from [mingw.org](http://www.mingw.org/download/installer).
+    1.  Download and run the installer from
+        [mingw.org](http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download).
     2.  Follow the prompts to install MinGW.
     3.  At the end, hit “Continue“ and the MinGW Installation Manager will open.
     4.  Select the “mingw32-base” and “mingw32-gcc-g++” packages
@@ -55,6 +56,9 @@ Make sure you have Git and a working C++14 toolchain installed.
 
 4.  Run the installer—defaults should be fine. (Windows: check all of the
     “Create associations” boxes when they appear.)
+
+5.  Windows only: Set the toolchain in CLion to `C:\mingw-w64\mingw64`
+    and ignore the warnings about version numbers.
 
 ## GitHub Setup
 
