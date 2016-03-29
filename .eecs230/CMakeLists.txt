@@ -25,11 +25,6 @@ macro (add_test_program name)
     add_test(Test_${name} ${name})
 endmacro (add_test_program)
 
-# Copy source files into build directory so that evaluation.cpp can see
-# them
-file(GLOB SRC_FILES "src/*")
-file(COPY ${SRC_FILES} DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/src/)
-
 ###
 ### Setting some flags, portably
 ###
