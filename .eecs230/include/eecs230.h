@@ -49,6 +49,14 @@
 
 #include "UnitTest++/UnitTest++.h"
 
+#define NEW_RUNTIME_ERROR(NAME)                         \
+    struct NAME : runtime_error {                       \
+        NAME(const string& s) : runtime_error{s}    {}  \
+        NAME(const char* s)   : runtime_error{s}    {}  \
+        NAME()                :                         \
+          NAME{static_cast<const char*>( #NAME )}   {}  \
+    }
+
 namespace eecs230 {
 
 // This is very impolite.
