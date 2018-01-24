@@ -10,6 +10,11 @@ set(UNITTESTCPP_ROOT .eecs230/lib/unittest-cpp)
 add_subdirectory(${UNITTESTCPP_ROOT})
 include_directories(${UNITTESTCPP_ROOT})
 
+# Graphics
+set(GRAPHICSCPP_ROOT .eecs230/lib/graphics)
+add_subdirectory(${GRAPHICSCPP_ROOT})
+include_directories(${GRAPHICSCPP_ROOT})
+
 # Adds a program with the given name and source files, and sets the
 # language to C++ 14
 macro (add_program name)

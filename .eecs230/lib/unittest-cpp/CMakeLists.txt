@@ -44,3 +44,36 @@ if(${UTPP_USE_PLUS_SIGN})
 	set_target_properties(UnitTest++ PROPERTIES OUTPUT_NAME UnitTest++)
 endif()
 
+
+# build the test runner
+file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp tests/*.h)
+source_group( "" FILES ${TEST_SRCS})
+add_executable(TestUnitTest++ ${TEST_SRCS})
+include_directories(.)
+
+if(${UTPP_USE_PLUS_SIGN})
+	set_target_properties(TestUnitTest++ PROPERTIES OUTPUT_NAME TestUnitTest++)
+endif()
+
+target_link_libraries(TestUnitTest++ UnitTest++)
+
+set_property(TARGET TestUnitTest++ PROPERTY CXX_STANDARD 11)
+set_property(TARGET TestUnitTest++ PROPERTY CXX_STANDARD_REQUIRED On)
+
+# run unit tests as post build step
+add_custom_command(TARGET TestUnitTest++
+	POST_BUILD COMMAND TestUnitTest++
+	COMMENT "Running unit tests")
+
+# add install targets
+# need a custom install path?
+# define CMAKE_INSTALL_PREFIX to change root folder
+if(${UTPP_USE_PLUS_SIGN})
+	set (UTPP_INSTALL_DESTINATION "include/UnitTest++")
+else()
+	set (UTPP_INSTALL_DESTINATION "include/UnitTestPP")
+endif()
+
+install(TARGETS UnitTest++ DESTINATION lib)
+install(FILES ${headers_} DESTINATION ${UTPP_INSTALL_DESTINATION})
+install(FILES ${platformHeaders_} DESTINATION ${UTPP_INSTALL_DESTINATION}/${platformDir_})
