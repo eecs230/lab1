@@ -2,6 +2,7 @@
 enable_testing()
 
 include_directories(src)
+include_directories(.eecs230/include)
 
 add_subdirectory(.eecs230/lib/catch EXCLUDE_FROM_ALL)
 add_subdirectory(.eecs230/lib/ge211 EXCLUDE_FROM_ALL)

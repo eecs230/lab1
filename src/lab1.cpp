@@ -1,5 +1,6 @@
-#include "eecs230.h"
+#include <eecs230.h>
 
-int main() {
+int main()
+{
     cout << "Hello world!\n";
 }
