@@ -2,5 +2,6 @@
 
 int main()
 {
-    cout << "Hello world!\n";
+    string name = "world";
+    cout << "Hello, " << name << "!\n";
 }

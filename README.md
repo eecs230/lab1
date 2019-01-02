@@ -184,8 +184,8 @@ repository to use.
    can open.
 
 4.  You should now be able to build and run the lab1 project. Choose
-    “Run 'Build-All'”, “Run 'lab1'”, or something like that from the
-    “Run” menu. The program should compile and run, printing the message
+    “Run 'lab1'” or something like that from the “Run” menu. The program
+    should compile and run, printing the message
 
     ```
     Hello, world!
@@ -199,11 +199,11 @@ repository to use.
     of the file should read:
 
     ```
-    #include "eecs230.h"
+    #include <eecs230.h>
 
-    string name = "world";
-
-    int main() {
+    int main()
+    {
+        string name = "world";
         cout << "Hello, " << name << "!\n";
     }
     ```
@@ -213,7 +213,7 @@ repository to use.
     would change it to:
 
     ```
-    string name = "Jesse";
+        string name = "Jesse";
     ```
 
     Run the program again and make sure your change worked.
