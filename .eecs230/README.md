@@ -2,13 +2,15 @@
 
 This directory contains files for configuring this EECS 230 project:
 
-    CMakeLists.txt - common macro definitions
+    cmake/ - build system setup
 
     README.md - this file
 
-    include/ - C++ header files
+    lib/ - included libraries
 
-        eecs230.h - our version of the book’s header
+        catch/ - testing framework
+
+        ge211/ - game engine library
 
 You probably shouldn’t change anything here. Since the course staff
 might change it at will, you should be prepared for merge conflicts.
