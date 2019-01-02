@@ -163,13 +163,15 @@ repository to use.
    should look similar, but with your username in place of “tov”.
 
 2. Above the file listing table, you should see a row of buttons
-   starting with “Branch: master” and “New pull request”. Further to the
-   right, you should see a drop-down menu button labeled either “HTTPS”
-   or “SSH”—if “SSH” then change it to “HTTPS”. The text in the box to
-   the right of this is your repository URL, which identifies where to
-   locate your code when using other programs, such as CLion. Copy your
-   repository URL to the clipboard. Mine is
-   `https://github.com/tov/lab1.git`, and yours should be similar.
+   starting with “Branch: master ▾” and “New pull request”. On the far
+   right of that row, you should see a green button labeled “Clone or
+   download ▾.” Click this to open the menu; the title should be “Clone
+   with HTTPS.” (If it says “Clone with SSH” instead, click the “Use
+   HTTPS” link to the right to switch it.) The text in the box the below
+   is your repository URL, which identifies where to locate your code
+   when using other programs, such as CLion. Copy your repository URL to
+   the clipboard. Mine is `https://github.com/tov/lab1.git`, and yours
+   should be similar.
 
 3. Now that you have a URL for your own lab1 repository, you will
    *clone* it in CLion, which makes a local copy that you can work with.
