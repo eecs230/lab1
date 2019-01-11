@@ -1,0 +1,22 @@
+# This file tests Git which files and directories it should
+# ignore rather than manage. When Git sees a file or directory
+# that it isn't managing and also isn't ignored, it will complain at you.
+# If that file or directory is something generated that you don't
+# want to track or share, then add it here.
+#
+
+# Virtual environment
+.venv/*
+!.venv/.keep
+
+# Compiled Python code
+__pycache__/
+
+# Mypy data
+.mypy_cache/
+
+# Pytest data
+.pytest_cache/
+
+# CLion configuration
+.idea/
